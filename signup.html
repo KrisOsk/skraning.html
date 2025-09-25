@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skráðu þig núna!</title>
+  </head>
+  <body>
+    <h1>Skráning í góða klúbbinn</h1>
+
+    <form method="get" action="/thankyou.html">
+      <label for="name">Fullt nafn</label><br />
+      <input type="text" name="name" required /><br /><br />
+
+      <label for="email">Netfang</label><br />
+      <input type="email" name="email" id="email" required /><br /><br />
+
+      <label for="password">Lykilorð</label><br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="6"
+        maxlength="15"
+        required
+      /><br /><br />
+
+      <label for="confirm">Staðfesta Lykilorð</label><br />
+      <input type="password" name="confirm" id="confirm" required /><br /><br />
+
+      <label for="age">Aldur</label><br />
+      <input type="number" name="age" id="age" min="0" max="120" /><br /><br />
+
+      <label for="radio">Kyn</label><br />
+      <label for="gender">Karl</label>
+      <input type="radio" name="gender" id="gender" value="male" required />
+
+      <label for="gender">Kona</label>
+      <input type="radio" name="gender" id="gender" value="female" required />
+
+      <label for="gender">Annað</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender"
+        value="other"
+        required
+      /><br /><br />
+
+      <label for="confirm">Ég sammþykki skilmála</label>
+      <input type="checkbox" name="agreement" id="agreement" /><br /><br />
+    </form>
+
+    <br /><br />
+    <button type="submit">Skrá mig!</button>
+  </body>
+</html>
